@@ -1,6 +1,8 @@
 @import "css-reset";
 @import "variables";
 @import "font";
+@import "remixicon";
+@import "utils";
 
 body {
   font-family: Yekan Bakh , sans-serif;
@@ -17,14 +19,55 @@ body {
   padding: 14px 0;
 }
 
+.sidebar-menu {
+  padding-top: 28px;
+  padding-left: 20px;
+
+  .sidebar-item {
+    transition: .4s ease;
+    position: relative;
+    margin-bottom: 14px;
+    cursor: pointer;
+    font-size: 1rem;
+    font-weight: 550;
+    padding: 8px 10px 8px 10px;
+    border-radius: 10px 0 0 10px;
+
+    i {
+      margin-left: 4px;
+    }
+
+    &.open , &:hover {
+      transition: .4s ease;
+      background: var(--background-bg);
+    }
+
+    ul {
+      font-size: .8rem;
+      padding-top: 10px;
+
+      li {
+        margin-top: 8px;
+        padding: 6px;
+        border-radius: 10px 4px 4px 10px;
+
+        &.selected {
+          background: var(--primary-text);
+        }
+      }
+    }
+  }
+}
+
 .logo-holder {
   width: 100%;
-  height: 200px;
   overflow: hidden;
   text-align: center;
   display: flex;
   flex-direction: column;
   align-items: center;
+  border-bottom: 1px solid var(--primary-text);
+  padding-bottom: 20px;
 
   .logo-circle{
     width: 100px;
