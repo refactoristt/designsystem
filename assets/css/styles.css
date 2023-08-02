@@ -10334,6 +10334,18 @@ body {
 .sidebar-menu .sidebar-item ul li.selected {
   background: var(--primary-text);
 }
+.sidebar-menu .sidebar-item ul li ol {
+  font-size: 0.8rem;
+  margin-right: 10px;
+}
+.sidebar-menu .sidebar-item ul li ol li {
+  margin-top: 8px;
+  padding: 6px;
+  border-radius: 10px 4px 4px 10px;
+}
+.sidebar-menu .sidebar-item ul li ol li.selected {
+  background: var(--primary-text);
+}
 
 .logo-holder {
   width: 100%;
