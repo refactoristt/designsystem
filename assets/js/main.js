@@ -1,8 +1,8 @@
 $(document).ready(function () {
-    $('.sidebar-item').on('click', function () {
-
+    $('.sidebar-item').on('click', function (e) {
+        console.log(e.target,this)
         $('.sidebar-item').removeClass('open');
-        $('.sidebar-item ul').slideUp();
+        // $('.sidebar-item ul').slideUp();
 
         $(this).children('ul').slideToggle();
         $(this).toggleClass('open');
