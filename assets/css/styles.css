@@ -10291,6 +10291,10 @@ body {
   color: var(--main-text);
 }
 
+* {
+  font-family: Yekan Bakh, sans-serif;
+}
+
 #sidebar {
   position: fixed;
   right: 0;
@@ -10375,6 +10379,44 @@ body {
   background: var(--background-bg);
   height: 100%;
   min-height: 100vh;
+  margin-right: 250px;
+  padding: 16px 10px 10px 10px;
+}
+
+.search-holder {
+  position: relative;
+  width: 240px;
+}
+.search-holder.active {
+  width: 280px;
+}
+.search-holder.active input {
+  width: 250px;
+}
+.search-holder.active i {
+  opacity: 0;
+}
+.search-holder input {
+  transition: width 1s ease;
+  font-size: 0.7rem;
+  background: var(--sidebar-bg);
+  border-radius: 20px;
+  padding: 10px;
+  border: none;
+  outline: none;
+  color: var(--main-text);
+  width: 210px;
+  position: relative;
+}
+.search-holder i {
+  transition: opacity 0.2s ease;
+  position: absolute;
+  color: var(--main-text);
+  z-index: 2;
+  opacity: 0.5;
+  transform: translateY(-50%);
+  top: 50%;
+  left: 24px;
 }
 
 /*# sourceMappingURL=styles.css.map */
