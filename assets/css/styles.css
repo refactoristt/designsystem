@@ -10419,4 +10419,38 @@ body {
   left: 24px;
 }
 
+#header {
+  display: flex;
+  justify-content: space-between;
+}
+#header nav {
+  display: flex;
+  justify-content: space-between;
+}
+
+.btn {
+  font-size: 0.8rem;
+  display: flex;
+  align-items: center;
+  padding: 4px;
+  background: transparent;
+  outline: none;
+  border: none;
+  cursor: pointer;
+}
+.btn-transparent {
+  color: var(--main-text);
+}
+.btn-transparent:hover {
+  scale: 1.02;
+}
+.btn-primary {
+  background: var(--primary);
+  color: var(--main-text);
+  box-shadow: 1px 1px 1px 2px var(--primary);
+}
+.btn-icon i {
+  margin-left: 6px;
+}
+
 /*# sourceMappingURL=styles.css.map */
